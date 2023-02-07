@@ -1,22 +1,65 @@
 .step3 {
-
-    // width: 100%;
     position: absolute;
+    overflow: hidden;
     // background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     z-index: 1;
-    :last-child{
-      justify-content: flex-end;
+    .titleTop{
+      h1{
+      font-size: 1.7em;
+      font-weight: bold;
+      transform: translate(183%);
+      margin-left: 10px;
+      }
+      h2{
+        transform: translate(183%);
+        margin-left: 10px;
+      }
+    }
+    .titleBottom{
+  h2{
+    margin-left: 10px;
+      margin-bottom: 1em;
+      transform: translate(253%);
+    .gros{
+      font-size: 2em;
+    }
     }
   }
-  // .step3:nth-child(2){
-  //   justify-content: flex-end;
-  // }
-//   .step3{
-//     &.active {
+  
+  }
 
-//     }
-// }
+  .step3{
+    &.active {
+      .titleTop{
+        h1{
+        animation: textIn 0.1s linear 3.8s forwards;
+        }
+        h2{
+        animation: textIn 0.1s linear 4.5s forwards;
+        }
+      }
+      .titleBottom{
+    h2{
+        animation: textIn 0.1s linear 5s forwards;
+        .exclamation1{
+          animation: fading1 0.01s linear 5.4s backwards;
+        }
+        .exclamation2{
+          animation: fading1 0.01s linear 5.6s backwards;
+        }
+        .exclamation3{
+          animation: fading1 0.01s linear 5.8s backwards;
+        }
+      }
+    }
+    }
+}
+@keyframes textIn {
+
+  100% {
+    transform: translate(0%,0%);}
+}
