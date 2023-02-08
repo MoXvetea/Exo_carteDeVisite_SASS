@@ -1,0 +1,236 @@
+.step2 {
+  position: absolute;
+  background-color: rgb(151, 228, 107);
+  display: flex;
+  z-index: 0;
+}
+
+.step2 {
+  &.active {
+    .cont {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      // border-top:15px solid black;
+      border-bottom: 15px solid rgb(122, 22, 22);
+      filter: url("#goo");
+      animation: fading1 0.05s ease 2s backwards;
+    }
+
+    .cont .drip {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: rgb(122, 22, 22);
+      position: absolute;
+      top: -100%;
+      // animation:falling 5s linear infinite;
+      animation: falling 3.5s linear 4s;
+      // animation: fading 0.1s ease 1.2s backwards ;
+    }
+
+    @keyframes falling {
+      0% {
+        top: -100%;
+      }
+
+      50% {
+        top: -30%;
+      }
+
+      100% {
+        top: 100%;
+      }
+    }
+
+    .cont .drip:nth-child(1) {
+      border-color: rgb(122, 22, 22);
+      height: 29px;
+      width: 29px;
+      animation-delay: -0.2s;
+      background: rgb(122, 22, 22);
+      left: 173px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(2) {
+      border-color: rgb(122, 22, 22);
+      height: 25px;
+      width: 25px;
+      animation-delay: -0.4s;
+      background: rgb(122, 22, 22);
+      left: 76px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(3) {
+      border-color: rgb(122, 22, 22);
+      height: 38px;
+      width: 38px;
+      animation-delay: -0.6s;
+      background: rgb(122, 22, 22);
+      left: 96px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(4) {
+      border-color: rgb(122, 22, 22);
+      height: 29px;
+      width: 29px;
+      animation-delay: -0.8s;
+      background: rgb(122, 22, 22);
+      left: 24px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(5) {
+      border-color: rgb(122, 22, 22);
+      height: 20px;
+      width: 20px;
+      animation-delay: -1s;
+      background: rgb(122, 22, 22);
+      left: 93px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(6) {
+      border-color: rgb(122, 22, 22);
+      height: 14px;
+      widows: 14px;
+      animation-delay: -1.2;
+      background: rgb(122, 22, 22);
+      left: 117px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(7) {
+      border-color: rgb(122, 22, 22);
+      height: 5px;
+      width: 5px;
+      animation-delay: -1.4s;
+      background: rgb(122, 22, 22);
+      left: 31px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(8) {
+      border-color: rgb(122, 22, 22);
+      height: 2px;
+      width: 2px;
+      animation-delay: -1.6s;
+      background: rgb(122, 22, 22);
+      left: 4px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(9) {
+      border-color: rgb(122, 22, 22);
+      height: 2px;
+      width: 2px;
+      animation-delay: -1.8s;
+      background: rgb(122, 22, 22);
+      left: 14px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(10) {
+      border-color: rgb(122, 22, 22);
+      height: 16px;
+      width: 16px;
+      animation-delay: -2s;
+      background: rgb(122, 22, 22);
+      left: 143px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(11) {
+      border-color: rgb(122, 22, 22);
+      height: 11px;
+      width: 11px;
+      animation-delay: -2.2s;
+      background: rgb(122, 22, 22);
+      left: 10px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(12) {
+      border-color: rgb(122, 22, 22);
+      height: 4px;
+      width: 4px;
+      animation-delay: -2.4s;
+      background: rgb(122, 22, 22);
+      left: 158px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(13) {
+      border-color: rgb(122, 22, 22);
+      height: 18px;
+      width: 18px;
+      animation-delay: -2.6s;
+      background: rgb(122, 22, 22);
+      left: 163px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(14) {
+      border-color: rgb(122, 22, 22);
+      height: 4px;
+      width: 4px;
+      animation-delay: -2.8s;
+      background: rgb(122, 22, 22);
+      left: 168px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(15) {
+      border-color: rgb(122, 22, 22);
+      height: 13px;
+      width: 13px;
+      animation-delay: -3s;
+      background: rgb(122, 22, 22);
+      left: 103px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(16) {
+      border-color: rgb(122, 22, 22);
+      height: 40px;
+      width: 40px;
+      animation-delay: -3.2s;
+      background: rgb(122, 22, 22);
+      left: 158px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(17) {
+      border-color: rgb(122, 22, 22);
+      height: 27px;
+      width: 27px;
+      animation-delay: -3.4s;
+      background: rgb(122, 22, 22);
+      left: 179px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(18) {
+      border-color: rgb(122, 22, 22);
+      height: 13px;
+      width: 13px;
+      animation-delay: -3.6s;
+      background: rgb(122, 22, 22);
+      left: 97px;
+      margin-left: 60px;
+    }
+
+    .cont .drip:nth-child(19) {
+      border-color: rgb(122, 22, 22);
+      height: 23px;
+      width: 23px;
+      animation-delay: -3.8s;
+      background: rgb(122, 22, 22);
+      left: 149px;
+      margin-left: 60px;
+    }
+  }
+}

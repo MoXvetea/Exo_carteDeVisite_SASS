@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visitCard {
+  height: 30%;
+  width: 33%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes fading {
+  from {
+    Opacity: 1;
+  }
+
+  to {
+    Opacity: 0;
+  }
+}
+
+@keyframes fading1 {
+  from {
+    Opacity: 0;
+  }
+
+  to {
+    Opacity: 1;
+  }
+}
